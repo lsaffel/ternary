@@ -15,9 +15,16 @@ int main()
     // now, compare the two numbers to see if the guest has 
     // guessed the host number correctly
 
-    if (hostUserNum == guestUserNum)
+    /* if (hostUserNum == guestUserNum)
         cout << "Correct!";
     else    
-        cout << "Incorrect!";
+        cout << "Incorrect!"; */
+
+    // same code using a ternary operator instead.
+    // The condition is first. If it's true, then the part 
+    // after the ? is executed. If it's false, then the part
+    // after the : is executed
+
+    (hostUserNum == guestUserNum) ?  cout << "Correct!" : cout << "Incorrect!";
 
 }
